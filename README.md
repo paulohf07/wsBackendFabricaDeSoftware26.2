@@ -1,31 +1,31 @@
-# API de Gest„o de Entregas & Consulta Clim·tica (Django REST Framework)
+# API de Gest√£o de Entregas & Consulta Clim√°tica (Django REST Framework)
 
-AplicaÁ„o backend desenvolvida em Django REST Framework (DRF) para gest„o de entregadores, motos e consulta unificada de localizaÁ„o (via BrasilAPI) e condiÁıes clim·ticas (via WeatherAPI), com registro histÛrico de consultas.
+Aplica√ß√£o backend desenvolvida em Django REST Framework (DRF) para gest√£o de entregadores, motos e consulta unificada de localiza√ß√£o (via BrasilAPI) e condi√ß√µes clim√°ticas (via WeatherAPI), com registro hist√≥rico de consultas.
 
 ---
 
-## ?? Funcionalidades
+##  Funcionalidades
 
 - **CRUD de Entregadores**: Cadastro e gerenciamento de entregadores.
-- **CRUD de Motos**: Cadastro e gerenciamento de veÌculos vinculados aos entregadores.
-- **Consulta Unificada (CEP + Clima)**: Endpoint que consulta dados de endereÁo e temperatura atual da cidade.
-- **HistÛrico de Consultas**: Armazenamento autom·tico no banco de dados de todas as cidades e CEPs pesquisados.
+- **CRUD de Motos**: Cadastro e gerenciamento de ve√≠culos vinculados aos entregadores.
+- **Consulta Unificada (CEP + Clima)**: Endpoint que consulta dados de endere√ßo e temperatura atual da cidade.
+- **Hist√≥rico de Consultas**: Armazenamento autom√°tico no banco de dados de todas as cidades e CEPs pesquisados.
 
 ---
 
-## ?? PrÈ-requisitos
+## ?? Pr√©-requisitos
 
-Certifique-se de ter instalado em sua m·quina:
-- Python (vers„o 3.10 ou superior)
+Certifique-se de ter instalado em sua m√°quina:
+- Python (vers√£o 3.10 ou superior)
 - Git
 
 ---
 
-## ?? Passo a Passo para Executar o Projeto
+##  Passo a Passo para Executar o Projeto
 
 Siga os passos abaixo no seu terminal para rodar o projeto localmente:
 
-### 1. Clonar o RepositÛrio
+### 1. Clonar o Reposit√≥rio
 \\\ash
 git clone https://github.com/paulohf07/wsBackendFabricaDeSoftware26.2.git
 cd wsBackendFabricaDeSoftware26.2
@@ -51,13 +51,13 @@ Ative o ambiente virtual:
   source venv/bin/activate
   \\\
 
-### 3. Instalar as DependÍncias
-Com o ambiente virtual ativado, instale os pacotes necess·rios:
+### 3. Instalar as Depend√™ncias
+Com o ambiente virtual ativado, instale os pacotes necess√°rios:
 \\\ash
 pip install -r requirements.txt
 \\\
 
-### 4. Aplicar as MigraÁıes do Banco de Dados
+### 4. Aplicar as Migra√ß√µes do Banco de Dados
 Configure as tabelas no banco de dados local:
 \\\ash
 python manage.py makemigrations
@@ -72,14 +72,14 @@ python manage.py runserver
 
 ---
 
-## ?? Como Testar a API
+## Como Testar a API
 
-Com o servidor rodando (\http://127.0.0.1:8000/\), vocÍ pode acessar as seguintes rotas:
+Com o servidor rodando (\http://127.0.0.1:8000/\), voc√™ pode acessar as seguintes rotas:
 
 - **Raiz da API**: \http://127.0.0.1:8000/\
 - **Gerenciar Entregadores (CRUD)**: \http://127.0.0.1:8000/entregadores/\
 - **Gerenciar Motos (CRUD)**: \http://127.0.0.1:8000/motos/\
 - **Consultar CEP e Clima**: \http://127.0.0.1:8000/consultar-entrega/?cep=55880000\
-- **Visualizar HistÛrico**: \http://127.0.0.1:8000/historico/\
+- **Visualizar Hist√≥rico**: \http://127.0.0.1:8000/historico/\
 - **Painel Administrativo**: \http://127.0.0.1:8000/admin/\
 
