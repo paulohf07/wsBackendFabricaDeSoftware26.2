@@ -13,7 +13,7 @@ Aplicação backend desenvolvida em Django REST Framework (DRF) para gestão de 
 
 ---
 
-## ?? Pré-requisitos
+## Pré-requisitos
 
 Certifique-se de ter instalado em sua máquina:
 - Python (versão 3.10 ou superior)
